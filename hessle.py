@@ -10,7 +10,7 @@ import threading
 
 EMAIL_FROM = "residentadvisoralerts@gmail.com"
 EMAIL_TO = ''
-PASSWORD = ""
+PASSWORD = "gbqcafjqtdyfnevb"
 START_URL = ''
 CHECK_FREQ = 60.0
 
