@@ -10,8 +10,9 @@ import threading
 
 EMAIL_FROM = "residentadvisoralerts@gmail.com"
 EMAIL_TO = ''
-PASSWORD = "gbqcafjqtdyfnevb"
+PASSWORD = ""
 START_URL = ''
+CHECK_FREQ = 60.0
 
 class Scraper:
   def __init__(self, start_url=None,headless=True):
@@ -36,7 +37,7 @@ class Email:
     server.quit()
 
 def check():
-  threading.Timer(60.0, check).start()
+  threading.Timer(CHECK_FREQ, check).start()
   now = datetime.now()
   print(f'Checking. The time is now {now.strftime("%H:%M:%S")}')
   start_url = START_URL
